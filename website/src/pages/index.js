@@ -2,14 +2,17 @@ import * as React from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import HeroSection from "../components/hero"
+import FeaturesSection from "../components/features"
+import LineSection from "../components/line"
 
 
 const IndexPage = () => (
   <Layout>
-    <h1>Hello</h1>
-    <div className="bg-primary h-[2000px]">
-      aaaaaa test
-    </div>
+    <HeroSection />
+    <LineSection />
+    <FeaturesSection />
+    <h1 className="mt-96">Hello</h1>
   </Layout>
 )
 

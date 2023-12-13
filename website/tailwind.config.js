@@ -7,19 +7,30 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#0000FF",
-        secondary: "#1a2639",
-        accent: "#e2e8f0",
-        highlight: "#edf2f7",
-        muted: "#718096",
-        white: "#fff",
-        black: "#000",
+        "primary-color": "#020745",
+        "secondary-color": "rgb(17,6,122)",
+        "accent": "#e2e8f0",
+        "highlight": "#edf2f7",
+        "muted": "#718096",
+        "white": "#fff",
+        "black": "#000",
       },
     },
     translate: {
       '-full': '-100%',
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-typewriter')({
+      wordsets: {
+          description: {
+              words: ['Decentralized Asset Management'],
+              delay: 2,
+              repeat: 0,
+              eraseSpeed: 0
+          }
+      }
+  })
+  ],
 }
 
