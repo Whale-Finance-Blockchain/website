@@ -4,15 +4,14 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import HeroSection from "../components/hero"
 import FeaturesSection from "../components/features"
-import LineSection from "../components/line"
+import AboutSection from "../components/about"
 
 
 const IndexPage = () => (
   <Layout>
     <HeroSection />
-    <LineSection />
+    <AboutSection />
     <FeaturesSection />
-    <h1 className="mt-96">Hello</h1>
   </Layout>
 )
 

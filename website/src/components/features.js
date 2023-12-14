@@ -36,31 +36,55 @@ const items = [
   ];
 
 const FeatureItem = ({ title, description, image }) => (
-    <div className="grid grid-cols-2 gap-4 items-center mt-8">
-      <div>
-        <img src={image} alt={title} className="w-full h-auto" />
-      </div>
-      <div>
-        <h3 className="font-bold text-2xl text-secondary-color">{title}</h3>
-        <p className="text-md mt-4">{description}</p>
-      </div>
+    // <div className="grid grid-cols-2 gap-4 items-center mt-8">
+    //   <div>
+    //     <img src={image} alt={title} className="w-full h-auto" />
+    //   </div>
+    //   <div>
+    //     <h3 className="font-bold text-2xl text-secondary-color">{title}</h3>
+    //     <p className="text-md mt-4">{description}</p>
+    //   </div>
+    // </div>
+    <div className="bg-transparent rounded-lg shadow-md p-6 hover:bg-slate-50 hover:cursor-pointer">
+      <h3 className="text-xl text-primary-color font-semibold mb-6">{title}</h3>
+      {/* <div className="text-indigo-600 border border-indigo-600 rounded-full px-4 py-1 text-sm mb-4">Release</div> */}
+      <p className="text-gray-600 mb-4">{description}</p>
+      {/* <div className="flex items-center">
+        <span className="h-3 w-3 bg-green-400 rounded-full mr-2"></span>
+        <span className="text-sm text-gray-600">Popup Window</span>
+      </div> */}
     </div>
   );
 
 const FeaturesSection = () => {
 
     return (
+        // <RevealWrapper>
+        //     <div className="">
+        //     <Reveal>
+        //         <h1 className="w-full text-center text-5xl mt-16 text-primary-color font-bold">Features</h1>
+        //         <div className="mt-16 grid grid-cols-2 gap-8 px-[var(--size-gap)]">
+        //             {items.map((item, index) => (
+        //             <FeatureItem key={index} {...item} />
+        //             ))}
+        //         </div>
+        //     </Reveal>
+        //     </div>
+        // </RevealWrapper>
         <RevealWrapper>
-            <div className="">
-            <Reveal>
-                <h1 className="w-full text-center text-5xl mt-16 text-primary-color font-bold">Features</h1>
-                <div className="mt-16 grid grid-cols-2 gap-8 px-[var(--size-gap)]">
-                    {items.map((item, index) => (
-                    <FeatureItem key={index} {...item} />
-                    ))}
-                </div>
-            </Reveal>
+        <div className="bg-gradient-to-b from-transparent to-slate-100 p-10 py-24">
+          <Reveal>
+          <h1 className="pb-20 font-600 text-center text-6xl text-primary-color">Our Benefits</h1>
+          <div className="flex flex-row">
+            {/* Colocar botao para About na esquerda */}
+            <div className="flex-1 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+              {items.map((item, index) => (
+                <FeatureItem key={index} {...item} />
+              ))}
             </div>
+          </div>
+          </Reveal>
+        </div>
         </RevealWrapper>
     )
 }
