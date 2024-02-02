@@ -131,7 +131,7 @@ const Header = ({ siteTitle }: { siteTitle: string }) => {
                                         <NavigationMenuLink>
                                             <div className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground hover:cursor-pointer">
                                                 <div className="text-sm font-medium leading-none">{item.submenu2_title}</div>
-                                                <div className="flex justify-center space-x-6 pt-2 text-foreground line-clamp-2 text-sm leading-snug text-muted-foreground">
+                                                <div className="flex justify-center space-x-6 pt-2 line-clamp-2 text-sm leading-snug text-muted-foreground">
                                                     <a href="https://discord.gg/zCRxDTTM"><FaDiscord className="text-xl cursor-pointer" /></a>
                                                     <a href="https://twitter.com/Whale_dApp"><FaTwitter className="text-xl cursor-pointer" /></a>
                                                     <a href="https://t.me/finance_whale"><FaTelegram className="text-xl cursor-pointer" /></a>
@@ -148,7 +148,7 @@ const Header = ({ siteTitle }: { siteTitle: string }) => {
                         {/* LAUNCH APP BUTTON */}
 
                         <NavigationMenuItem>
-                                <Button className="w-[180px] mx-[20px] font-bold"><a href="https://whale-finance.vercel.app/">Launch App</a></Button>
+                                <Button className="w-[180px] mx-[20px] font-bold"><a href="https://whale-finance-areon.vercel.app/">Launch App</a></Button>
                         </NavigationMenuItem>
                     </NavigationMenuList>
                 </NavigationMenu>

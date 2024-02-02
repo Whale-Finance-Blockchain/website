@@ -81,7 +81,7 @@ const HeroSection = () => {
                         <img src={AreonLogo} alt="Areon" className="w-auto h-[40px]"/>
                         <div className="flex flex-row justify-center space-x-6 pt-12">
                             <Button variant="secondary" className="w-[180px]"><a href="https://docs.google.com/document/d/1-L9aI6h1UAKb5a494ocbFlLQsVnvTPgunvr82geSgYo/edit?usp=sharing">Litepaper</a></Button>
-                            <Button className="w-[180px]"><a href="https://whale-finance.vercel.app/">Launch App</a></Button>
+                            <Button className="w-[180px]"><a href="https://whale-finance-areon.vercel.app/">Launch App</a></Button>
                         </div>
                         <div className="flex justify-center mt-20 space-x-8 text-background">
                             <a href="https://discord.gg/zCRxDTTM"><FaDiscord className="text-3xl cursor-pointer" /></a>
