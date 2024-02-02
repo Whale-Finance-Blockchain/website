@@ -1,6 +1,7 @@
 import * as React from "react"
 import Bkg from "../assets/whale_bkg2.png"
 import Logo from "../assets/whale_logo_white.png"
+import AreonLogo from "../assets/Areon_white.svg"
 import { Button } from "./ui/button"
 import { Link } from "gatsby"
 import { FaDiscord, FaTwitter, FaGithub, FaLinkedin, FaTelegram } from 'react-icons/fa';
@@ -75,8 +76,9 @@ const HeroSection = () => {
                             Whale Finance
                         </h1>
                         <h2 className="mt-4 mb-4 italic text-white">
-                            Decentralized Asset Management
+                            Decentralized Asset Management for
                         </h2>
+                        <img src={AreonLogo} alt="Areon" className="w-auto h-[40px]"/>
                         <div className="flex flex-row justify-center space-x-6 pt-12">
                             <Button variant="secondary" className="w-[180px]"><a href="https://docs.google.com/document/d/1-L9aI6h1UAKb5a494ocbFlLQsVnvTPgunvr82geSgYo/edit?usp=sharing">Litepaper</a></Button>
                             <Button className="w-[180px]"><a href="https://whale-finance.vercel.app/">Launch App</a></Button>
